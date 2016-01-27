@@ -38,7 +38,7 @@ mongoose是基于nodejs-mongodb-native封装的app
 
 ### mongodb的db链接取得方法
 
-1. connect方法，取得默认链接，在只有一个库的情况下使用
+* connect方法，取得默认链接，在只有一个库的情况下使用
 
 ```
 	var mongoose = require("mongoose");
@@ -48,7 +48,7 @@ mongoose是基于nodejs-mongodb-native封装的app
 	mongoose.model("Cat", new Schema({...}));
 	var Cat = mongoose.model("Cat");
 ```
-2. createConnection方法，适用于多数据库
+* createConnection方法，适用于多数据库  
 这种方法的注册model要用connction注册
 
 ```
