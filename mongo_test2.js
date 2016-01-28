@@ -33,7 +33,7 @@ function defineSchema(mongoose) {
 	PersonSchema.methods.findSameAge = function (callback){
 		var Person = this.model("person");
 		var age = this.age;
-		Person.find({age: age}, {name: 1, age: 1}, function(err, personResult){
+		Person.find({age: age}, {_id: 1, name: 1, age: 1}, function(err, personResult){
 			callback(personResult);
 		});
 	}
@@ -70,7 +70,7 @@ function testFind(mongoose){
 		console.log("find person age is", personInfo.age);
 		personInfo.findSameAge(function(personArr){
 			var str = personArr.map(personItem=> `${personItem.name}[${personItem.age}]`).join(",");
-			console.log("save age person is ", str);
+			console.log("same age person is ", str);
 		})
 	})
 }
