@@ -1,3 +1,7 @@
+/**
+* 基本的增删改查例子
+*/
+
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var ObjectId = mongoose.ObjectId;

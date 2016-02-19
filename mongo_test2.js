@@ -1,3 +1,7 @@
+/**
+* 自定义方法的例子
+*/
+
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
