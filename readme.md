@@ -136,4 +136,3 @@ db.books.count()
 
 - mongo_test3.js - 使用populate，进行关联查询
 
-- mongo_test4.js - validation （TODO）
